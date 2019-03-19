@@ -1,23 +1,32 @@
 <!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>YWD Countdown</title>
 <link type="text/css" rel="stylesheet" href="styles.css"></link>
-
-<h1>YWD２０１８年まで、後</h1>
-<div id="clockdiv">
-  <div>
-    <span class="days"></span>
-    <div class="smalltext">Days</div>
-  </div>
-  <div>
-    <span class="hours"></span>
-    <div class="smalltext">Hours</div>
-  </div>
-  <div>
-    <span class="minutes"></span>
-    <div class="smalltext">Minutes</div>
-  </div>
-  <div>
-    <span class="seconds"></span>
-    <div class="smalltext">Seconds</div>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<img src="http://htdc.jp/img/logo.png"/>
+  <h1>YWD2019年まで後</h1>
+<div class="container">
+  <div id="clockdiv">
+    <div>
+      <span class="days"></span>
+      <div class="smalltext">日</div>
+    </div>
+    <div>
+      <span class="hours"></span>
+      <div class="smalltext">時</div>
+    </div>
+    <div>
+      <span class="minutes"></span>
+      <div class="smalltext">分</div>
+    </div>
+    <div>
+      <span class="seconds"></span>
+      <div class="smalltext">秒</div>
+    </div>
   </div>
 </div>
 
@@ -60,6 +69,6 @@ function initializeClock(id, endtime) {
   updateClock();
   var timeinterval = setInterval(updateClock, 1000);
 }
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+var deadline = new Date(new Date("June 01, 2019"));
 initializeClock('clockdiv', deadline);
 </script>
